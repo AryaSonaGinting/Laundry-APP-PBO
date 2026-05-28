@@ -1,9 +1,11 @@
-package models;
+package laundry.models;
 
 public class LaundryOrder {
     private String namaCustomer;
     private double berat;
-    private ServiceType serviceType;
+
+    private LayananLaundry layanan;
+
     private boolean express;
     private boolean vip;
     private boolean antarJemput;
@@ -11,18 +13,16 @@ public class LaundryOrder {
     private double totalHarga;
     private PaymentMethod metodeBayar;
 
-    // harusnya sini constructor kosong
     public LaundryOrder() {}
 
-    // sini pake setter dan getter
-    public String getNamaCustomer() { return namaCustomer;}
-    public void setNamaCustomer(String namaCustomer) {this.namaCustomer = namaCustomer;}
+    public String getNamaCustomer() { return namaCustomer; }
+    public void setNamaCustomer(String namaCustomer) { this.namaCustomer = namaCustomer; }
 
-    public double getBerat() {return berat;}
-    public void setBerat( double berat) {this.berat = berat;}
+    public double getBerat() { return berat; }
+    public void setBerat(double berat) { this.berat = berat; }
 
-    public ServiceType getServiceType() { return serviceType; }
-    public void setServiceType(ServiceType serviceType) { this.serviceType = serviceType; }
+    public LayananLaundry getLayanan() { return layanan; }
+    public void setLayanan(LayananLaundry layanan) { this.layanan = layanan; }
 
     public boolean isExpress() { return express; }
     public void setExpress(boolean express) { this.express = express; }
